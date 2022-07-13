@@ -49,7 +49,7 @@ function clock() {
     writeMonth();
 
     function writeHours() {
-      let meridian = hour > 12 ? "PM" : AM;
+      let meridian = hour > 12 ? "PM" : "AM";
 
       $clockNumbers.textContent = `
          ${hour > 12 ? hour - 12 : hour}:
